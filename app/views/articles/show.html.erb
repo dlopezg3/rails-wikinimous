@@ -1,0 +1,11 @@
+<div class="text-center">
+  <div class="bg-primary">
+    <h1 class="d-inline-block"> <%= @article.title %> </h1>
+    <h5 class="d-inline-block btn btn-success"> <%= link_to "Edit", edit_article_path(@article) %> </h5>
+    <h5 class="d-inline-block btn btn-danger">  <%= link_to "Delete", article_path(@article),
+                                                method: :delete,
+                                                data: { confirm: "Are you sure?" } %>
+    </h5>
+  </div>
+  <h4 class="text-justify"> <%= @article.content %> </h4>
+</div>

@@ -1,0 +1,14 @@
+<div class="text-center">
+  <div class="form">
+    <%= form_for(@article) do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+      <div class="btn btn-primary">
+        <%= f.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>
